@@ -7,6 +7,9 @@ filebeat.inputs:
   paths:
     - /Users/akka/go/src/beats_output_websocket/cmd/filebeat/example.log
 
+processors:
+  - add_host_metadata: ~
+
 output.websocket:
   # worker
   # 用于工作的websocket客户端数量
