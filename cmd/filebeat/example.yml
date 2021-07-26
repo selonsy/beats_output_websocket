@@ -1,11 +1,8 @@
-filebeat.inputs:
-
-- type: log
-  # Change to true to enable this input configuration.
+filebeat.config.inputs:
   enabled: true
-  # Paths that should be crawled and fetched. Glob based paths.
-  paths:
-    - /Users/akka/go/src/beats_output_websocket/cmd/filebeat/example.log
+  path: /Users/akka/go/src/beats_output_websocket/cmd/filebeat/inputs/*.yml
+  reload.enabled: true
+  reload.period: 10s
 
 processors:
   - add_host_metadata: ~

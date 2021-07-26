@@ -3,7 +3,7 @@ module github.com/shoothzj/beats_output_websocket
 go 1.16
 
 require (
-	github.com/elastic/beats/v7 v7.13.2
+	github.com/elastic/beats/v7 v7.13.4
 	github.com/gorilla/websocket v1.4.1
 )
 
